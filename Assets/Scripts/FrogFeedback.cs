@@ -1,16 +1,15 @@
-﻿using UnityEngine;
+﻿using MoreMountains.Feedbacks;
+using UnityEngine;
 
-class FrogFeedback : MonoBehaviour
+internal class FrogFeedback : MonoBehaviour
 {
-    [SerializeField]
-    private ParticleSystem moveParticles;
-
     private GroundDetector groundDetector;
-    [SerializeField]
-    private ParticleSystem landParticles;
 
     [SerializeField]
-    private ParticleSystem jumpParticles;
+    private MMF_Player landFeedback;
+
+    [SerializeField]
+    private MMF_Player jumpFeedback;
 
     private void Awake()
     {
@@ -31,12 +30,11 @@ class FrogFeedback : MonoBehaviour
 
     private void LandFeedback()
     {
-        moveParticles.Play();
-        landParticles.Play();
+        landFeedback.PlayFeedbacks();
     }
 
     private void JumpFeedback()
     {
-        jumpParticles.Play();
+        jumpFeedback.PlayFeedbacks();
     }
 }

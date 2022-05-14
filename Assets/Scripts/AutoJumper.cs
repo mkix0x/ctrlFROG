@@ -17,6 +17,7 @@ internal class AutoJumper : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
         groundDetector = GetComponent<GroundDetector>();
+        nextJumpTime = Time.time + cooldown;
     }
 
     private void Update()
