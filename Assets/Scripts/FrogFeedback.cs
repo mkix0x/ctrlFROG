@@ -3,13 +3,13 @@ using UnityEngine;
 
 internal class FrogFeedback : MonoBehaviour
 {
-    private GroundDetector groundDetector;
-
     [SerializeField]
     private MMF_Player landFeedback;
 
     [SerializeField]
     private MMF_Player jumpFeedback;
+
+    private GroundDetector groundDetector;
 
     private void Awake()
     {

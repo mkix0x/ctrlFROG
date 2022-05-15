@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-class LookAtMouse : MonoBehaviour
+internal class LookAtMouse : MonoBehaviour
 {
     private new Camera camera;
     private Rotator rotator;

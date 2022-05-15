@@ -9,7 +9,7 @@ internal class Mover : MonoBehaviour, IMover
 {
     [SerializeField]
     private float moveSpeed = 4;
-    
+
     private Rigidbody body;
 
     private void Awake()

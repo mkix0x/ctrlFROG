@@ -2,22 +2,21 @@
 
 internal class AutoJumper : MonoBehaviour
 {
-    [SerializeField]
-    private float cooldown;
+    public float Cooldown;
 
-    private float nextJumpTime;
+    public float JumpForce = 5;
+
     private Rigidbody body;
 
-    [SerializeField]
-    private float jumpForce = 5;
-
     private GroundDetector groundDetector;
+
+    private float nextJumpTime;
 
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
         groundDetector = GetComponent<GroundDetector>();
-        nextJumpTime = Time.time + cooldown;
+        nextJumpTime = Time.time + Cooldown;
     }
 
     private void Update()
@@ -28,14 +27,14 @@ internal class AutoJumper : MonoBehaviour
         if (!groundDetector.IsGrounded)
             return;
 
-        nextJumpTime = Time.time + cooldown;
+        nextJumpTime = Time.time + Cooldown;
         Jump();
     }
 
     private void Jump()
     {
         Vector3 velocity = body.velocity;
-        velocity.y = jumpForce;
+        velocity.y = JumpForce;
         body.velocity = velocity;
     }
 }

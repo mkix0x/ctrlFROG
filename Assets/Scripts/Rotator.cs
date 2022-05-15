@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-class Rotator : MonoBehaviour
+internal class Rotator : MonoBehaviour
 {
     public void RotateTowards(Vector3 point)
     {
