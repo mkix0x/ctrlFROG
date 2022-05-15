@@ -16,7 +16,7 @@ PlayerSettings:
   productName: ctrlFROG
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.2, g: 0.11764706, b: 0.1764706, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
@@ -44,8 +44,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
-  defaultScreenWidthWeb: 1920
-  defaultScreenHeightWeb: 1080
+  defaultScreenWidthWeb: 768
+  defaultScreenHeightWeb: 432
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -313,8 +313,8 @@ PlayerSettings:
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
   m_TemplateCustomTags:
-    BACKGROUND: '#000000'
-    OPTIMIZE_FOR_PIXEL_ART: false
+    BACKGROUND: '#331e2d'
+    OPTIMIZE_FOR_PIXEL_ART: true
     SCALE_TO_FIT: true
   mobileMTRendering:
     Android: 1
